@@ -1,7 +1,9 @@
 # Deploy Multiple Servers on Azure
 
 Deploy multiple servers within an existing Azure virtual network. Deploy Generation 1 or 2 virtual machines on selected SKU's. Solution options available are Windows Server 2022 Datacenter/Windows 2019 Datacenter/Windows 2016 Datacenter/Windows 2012 R2/Ubuntu 22.04-LTS/ Ubuntu 20.04-LTS/CentOS 7.9/Debian 11 /Debian 12/RedHat Enterprise Server 7.8/RedHat Enterprise Server 8/GitHub Enterprise Server. 
+
 Ubuntu 18.04-LTS has been removed since the OS has reached end of life by the vendor.
+
 The solution is intended for deploying either production or development workloads in Azure Commercial and Azure Government.
 ### Please note that at the end of the virtual machine name I am appending a "-" and the next ordinal number. Example Server-1, Server-2, etc. Hostnames should not exceed 15 characters.
 ### We are adding a route table, network security group, and availability set for the virtual machines that are being deployed. Please configure these objects as you see fit and associate with either the virtual network or virtual machine. You can also inherit both the existing route tables and network security groups that have already been preconfigured in your environment. The choice is yours.
